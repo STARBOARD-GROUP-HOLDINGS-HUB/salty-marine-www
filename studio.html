@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio — Salty Marine Marketing Gallery</title>
+  <meta name="description" content="Salty Marine Media Studio gallery — marketing creatives for vessels, parts, and service.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://saltymarine.com/studio">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <meta property="og:title" content="Salty Marine Studio">
+  <meta property="og:description" content="Marketing creatives for vessels, parts, and service. Media Studio gallery from Salty Marine.">
+  <meta property="og:image" content="https://saltymarine.com/img/studio/ASSET-002-saltymarine_og_card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://saltymarine.com/studio">
+  <meta property="og:site_name" content="Salty Marine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Salty Marine Studio">
+  <meta name="twitter:description" content="Marketing creatives for vessels, parts, and service. Media Studio gallery.">
+  <meta name="twitter:image" content="https://saltymarine.com/img/studio/ASSET-002-saltymarine_og_card.jpg">
+<!-- W4564 SEO level-up: CollectionPage schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Salty Marine Media Studio",
+  "description": "Marketing creatives for vessels, parts, and service. Media Studio gallery from Salty Marine.",
+  "url": "https://saltymarine.com/studio",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Salty Marine",
+    "url": "https://saltymarine.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Salty Marine",
+    "url": "https://saltymarine.com"
+  }
+}
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --navy:#0B1A2E; --sky:#0EA5E9; --cream:#F8FAFC; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:"DM Sans",system-ui,sans-serif; background:var(--cream); color:var(--navy); }
+    header { padding:2.5rem 1.5rem 1rem; max-width:1100px; margin:0 auto; }
+    h1 { font-family:"Cormorant Garamond",Georgia,serif; font-size:clamp(2rem,4vw,3rem); margin:0 0 .35rem; }
+    p.lead { margin:0; opacity:.8; max-width:42rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem; padding:1rem 1.5rem 3rem; max-width:1100px; margin:0 auto; }
+    figure { margin:0; background:#fff; border-radius:4px; overflow:hidden; box-shadow:0 1px 0 rgba(11,26,46,.08); }
+    figure img { display:block; width:100%; height:200px; object-fit:cover; }
+    figcaption { padding:.75rem .9rem 1rem; font-size:.85rem; line-height:1.35; }
+    a.home { color:var(--sky); text-decoration:none; font-weight:600; font-size:.9rem; }
+    .empty { padding:2rem 1.5rem; opacity:.7; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="home" href="/">← Salty Marine</a>
+    <h1>Media Studio</h1>
+    <p class="lead">Marketing creatives synced from SGH Media Studio — vessels, equipment, and brand cards ready for social and listings.</p>
+  </header>
+  <div id="gallery" class="grid"></div>
+  <script>
+    async function load() {
+      const el = document.getElementById('gallery');
+      try {
+        const res = await fetch('/img/studio/index.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('index missing');
+        const data = await res.json();
+        const assets = (data.assets || []).filter(n => /\.(jpe?g|png|webp)$/i.test(n));
+        if (!assets.length) {
+          el.outerHTML = '<p class="empty">No studio assets yet. Run media_studio_agent corsair-proof.</p>';
+          return;
+        }
+        el.innerHTML = assets.map(name => {
+          const src = '/img/studio/' + encodeURIComponent(name);
+          return `<figure><img src="${src}" alt="${name}" loading="lazy"><figcaption>${name}</figcaption></figure>`;
+        }).join('');
+      } catch (e) {
+        el.outerHTML = '<p class="empty">Studio index unavailable.</p>';
+      }
+    }
+    load();
+  </script>
+</body>
+</html>

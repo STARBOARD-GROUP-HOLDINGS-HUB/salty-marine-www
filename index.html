@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salty Marine — Independent Marine Battery & Energy Systems</title>
+    <meta name="description" content="Salty Marine delivers sodium-ion marine battery systems, independent stabilizer power solutions, and energy automation for vessels. Generator-free anchor operation. Built by operators, engineered for the ocean.">
+    <meta name="keywords" content="marine batteries, sodium ion marine, boat battery systems, marine energy, stabilizer battery, generator free anchor, marine DC power, Fort Lauderdale marine, independent marine service">
+    <meta name="author" content="Salty Marine — A Starboard Tech Group Company">
+    <meta name="theme-color" content="#0B1A2E">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Salty Marine — Marine Battery & Energy Systems">
+    <meta property="og:description" content="Sodium-ion marine power. Generator-free anchor operation. Independent stabilizer battery systems. Built by operators.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saltymarine.com">
+    <meta property="og:site_name" content="Salty Marine">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Salty Marine — Marine Battery & Energy Systems">
+    <meta name="twitter:description" content="Sodium-ion marine power. Generator-free anchor operation. Independent stabilizer battery systems.">
+    <meta property="og:image" content="https://saltymarine.com/img/og-brand-card.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Salty Marine — Independent Marine Battery &amp; Energy Systems">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://saltymarine.com">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+    <!-- Fonts (SGH Brand Guide) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        admiralty: '#0B1A2E',
+                        brass: '#C8A24D',
+                        parchment: '#F5F0E8',
+                        bearing: '#1E3A5F',
+                        compass: '#2B7A78',
+                        stern: '#4A4A4A',
+                        signal: '#B22234',
+                        support: '#1B6B4A',
+                        pending: '#7B8794',
+                        salt: '#0EA5E9',
+                        'salt-dark': '#0369A1',
+                        ocean: '#064E3B',
+                    },
+                    fontFamily: {
+                        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        body: ['"DM Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', '"Fira Code"', 'Consolas', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body { font-family: 'DM Sans', sans-serif; background-color: #0B1A2E; color: #F5F0E8; }
+        .card-glow { transition: all 0.3s ease; }
+        .card-glow:hover { box-shadow: 0 0 24px rgba(14, 165, 233, 0.15); border-color: rgba(14, 165, 233, 0.4); transform: translateY(-2px); }
+        .text-gradient-salt { background: linear-gradient(135deg, #0EA5E9 0%, #C8A24D 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-admiralty text-parchment antialiased selection:bg-salt selection:text-admiralty">
+
+    <!-- NAV -->
+    <nav class="sticky top-0 z-50 bg-admiralty/95 backdrop-blur-md border-b border-salt/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded border border-salt flex items-center justify-center bg-salt/5">
+                    <i data-lucide="battery-charging" class="w-4 h-4 text-salt"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-display text-xl font-bold tracking-wider text-salt uppercase leading-none">SALTY</span>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-parchment/40">Marine Energy</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-parchment/60">
+                <a href="/services" class="hover:text-salt transition">Services</a>
+                <a href="/technology" class="hover:text-salt transition">Technology</a>
+                <a href="/gyro-kits" class="hover:text-salt transition">Gyro Kits</a>
+                <a href="/battery-sizing" class="hover:text-salt transition">Battery Sizing</a>
+                <a href="/compare" class="hover:text-salt transition">Compare</a>
+                <a href="/faq" class="hover:text-salt transition">FAQ</a>
+                
+            </div>
+
+            <a href="#pre-order" class="hidden md:flex items-center gap-2 border border-brass/40 bg-brass/10 hover:bg-brass/20 text-brass px-4 py-2 rounded text-xs font-bold uppercase tracking-wider transition">
+                <i data-lucide="package" class="w-3 h-3"></i> Pre-Order Kit
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="relative overflow-hidden pt-24 pb-20 px-6 border-b border-salt/5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-bearing/30 via-admiralty to-admiralty">
+        <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(circle at 1px 1px, #0EA5E9 1px, transparent 0); background-size: 32px 32px;"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 border border-salt/20 bg-salt/5 px-3 py-1 rounded-full text-xs font-semibold text-salt uppercase tracking-wider mb-6">
+                <i data-lucide="anchor" class="w-4 h-4"></i> Independent Marine Energy Systems
+            </div>
+
+            <p class="font-mono text-xs text-brass/80 tracking-widest uppercase mb-4">No Generator. No Compromise. No Dealer Lock-In.</p>
+
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 tracking-tight text-white">
+                Power Your Vessel <br class="hidden md:inline">
+                <span class="text-gradient-salt">On Your Terms</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-parchment/60 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
+                Salty Marine designs and installs sodium-ion battery systems purpose-built for marine stabilizers,
+                house loads, and anchor operation. Generator-free. OEM-independent. Engineered in Fort Lauderdale
+                by the team that knows these systems from the inside.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#solutions" class="bg-salt hover:bg-salt-dark text-white px-8 py-4 rounded font-semibold transition flex items-center justify-center gap-2 shadow-lg shadow-salt/10">
+                    Explore Solutions <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+                <a href="#technology" class="border border-parchment/20 hover:bg-parchment/5 px-8 py-4 rounded font-semibold transition flex items-center justify-center gap-2">
+                    <i data-lucide="cpu" class="w-4 h-4"></i> See The Technology
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- STATS BAR -->
+    <section class="py-12 px-6 border-b border-salt/5">
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="font-display text-3xl md:text-4xl font-bold text-salt">15+</div>
+                <div class="text-[10px] uppercase tracking-widest text-parchment/40 mt-1">Years Marine Systems</div>
+            </div>
+            <div>
+                <div class="font-display text-3xl md:text-4xl font-bold text-salt">0</div>
+                <div class="text-[10px] uppercase tracking-widest text-parchment/40 mt-1">Generator Required</div>
+            </div>
+            <div>
+                <div class="font-display text-3xl md:text-4xl font-bold text-salt">Na+</div>
+                <div class="text-[10px] uppercase tracking-widest text-parchment/40 mt-1">Sodium-Ion Chemistry</div>
+            </div>
+            <div>
+                <div class="font-display text-3xl md:text-4xl font-bold text-salt">100%</div>
+                <div class="text-[10px] uppercase tracking-widest text-parchment/40 mt-1">OEM Independent</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section id="solutions" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center gap-2 border border-salt/20 bg-salt/5 px-3 py-1 rounded-full text-xs font-semibold text-salt uppercase tracking-wider mb-4">
+                <i data-lucide="plug-zap" class="w-4 h-4"></i> What We Build
+            </div>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Marine Energy Solutions</h2>
+            <div class="w-24 h-[1px] bg-salt mx-auto mb-6"></div>
+            <p class="text-parchment/60 max-w-2xl mx-auto text-sm leading-relaxed">
+                Every system is custom-engineered for your vessel. No off-the-shelf boxes. No dealer markups.
+                Direct from the engineers who install them.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Stabilizer Battery Pack -->
+            <div class="bg-bearing/20 border border-salt/10 rounded-lg p-8 card-glow">
+                <div class="w-12 h-12 rounded-full bg-salt/10 border border-salt/20 flex items-center justify-center text-salt mb-6">
+                    <i data-lucide="rotate-3d" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-white mb-3">Stabilizer Battery Pack</h3>
+                <p class="text-sm text-parchment/60 leading-relaxed mb-4">
+                    Purpose-built sodium-ion DC battery banks sized for gyroscopic stabilizer surge loads.
+                    Run your stabilizer at anchor without a generator. Sized for Seakeeper 1–3, Quick MC2 X, and Humphree fin power profiles.
+                </p>
+                <ul class="space-y-2 text-xs text-parchment/50">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> Non-flammable sodium-ion cells</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> 4-8 hour anchor runtime (vessel dependent)</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> Integrated BMS with marine-grade housing</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> Compatible with any stabilizer brand</li>
+                </ul>
+                <div class="mt-6 pt-4 border-t border-salt/10">
+                    <span class="font-mono text-[10px] text-salt/60 uppercase tracking-wider">SALT START&trade; Technology</span>
+                </div>
+            </div>
+
+            <!-- House Bank Upgrade -->
+            <div class="bg-bearing/20 border border-salt/10 rounded-lg p-8 card-glow">
+                <div class="w-12 h-12 rounded-full bg-salt/10 border border-salt/20 flex items-center justify-center text-salt mb-6">
+                    <i data-lucide="home" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-white mb-3">House Bank Upgrade</h3>
+                <p class="text-sm text-parchment/60 leading-relaxed mb-4">
+                    Replace aging lead-acid or lithium house banks with sodium-ion. Longer cycle life.
+                    No thermal runaway risk. Drop-in compatible with existing charging infrastructure.
+                </p>
+                <ul class="space-y-2 text-xs text-parchment/50">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> 3,000+ cycle life (vs 500 lead-acid)</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> Zero thermal runaway risk</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> Wide temperature tolerance (-20C to 60C)</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> 40-60% weight savings vs lead-acid</li>
+                </ul>
+                <div class="mt-6 pt-4 border-t border-salt/10">
+                    <span class="font-mono text-[10px] text-salt/60 uppercase tracking-wider">All Vessel Types 25'&ndash;120'</span>
+                </div>
+            </div>
+
+            <!-- Energy Automation -->
+            <div class="bg-bearing/20 border border-salt/10 rounded-lg p-8 card-glow">
+                <div class="w-12 h-12 rounded-full bg-salt/10 border border-salt/20 flex items-center justify-center text-salt mb-6">
+                    <i data-lucide="settings-2" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-white mb-3">Energy Automation</h3>
+                <p class="text-sm text-parchment/60 leading-relaxed mb-4">
+                    Intelligent power management that coordinates battery, generator, shore power, and solar.
+                    Automated load shedding. Predictive runtime estimation. Remote monitoring.
+                </p>
+                <ul class="space-y-2 text-xs text-parchment/50">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> Multi-source power orchestration</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> Automated generator start/stop</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> Real-time SOC and runtime display</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support"></i> Remote monitoring via mobile app</li>
+                </ul>
+                <div class="mt-6 pt-4 border-t border-salt/10">
+                    <span class="font-mono text-[10px] text-salt/60 uppercase tracking-wider">PREDICATE ARMOR&trade; Telemetry</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section id="technology" class="bg-bearing/20 py-20 px-6 border-y border-salt/5">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 border border-salt/20 bg-salt/5 px-3 py-1 rounded-full text-xs font-semibold text-salt uppercase tracking-wider mb-4">
+                    <i data-lucide="flask-conical" class="w-4 h-4"></i> The Science
+                </div>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Why Sodium-Ion</h2>
+                <div class="w-24 h-[1px] bg-salt mx-auto mb-6"></div>
+                <p class="text-parchment/60 max-w-2xl mx-auto text-sm leading-relaxed">
+                    Sodium-ion battery technology is the next generation of marine energy storage. Safer than lithium.
+                    Cheaper than lithium. And perfectly suited for the high-surge, salt-air environment of marine applications.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 shrink-0 rounded bg-salt/10 border border-salt/20 flex items-center justify-center text-salt">
+                            <i data-lucide="flame-off" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-display text-lg font-bold text-white mb-1">Non-Flammable</h4>
+                            <p class="text-xs text-parchment/50 leading-relaxed">Sodium-ion cells cannot experience thermal runaway. No fire risk. No explosion risk. Insurance-friendly. The only marine-safe chemistry that eliminates fire suppression requirements.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 shrink-0 rounded bg-salt/10 border border-salt/20 flex items-center justify-center text-salt">
+                            <i data-lucide="thermometer-snowflake" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-display text-lg font-bold text-white mb-1">Temperature Tolerant</h4>
+                            <p class="text-xs text-parchment/50 leading-relaxed">Operates from -20&deg;C to 60&deg;C without derating. No engine room cooling required. Performs in Florida summer heat and northern winter cold equally.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 shrink-0 rounded bg-salt/10 border border-salt/20 flex items-center justify-center text-salt">
+                            <i data-lucide="refresh-cw" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-display text-lg font-bold text-white mb-1">3,000+ Cycle Life</h4>
+                            <p class="text-xs text-parchment/50 leading-relaxed">Six times the cycle life of lead-acid. At daily use, that's 8+ years before capacity degradation. The math is simple: sodium-ion pays for itself in year 3.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 shrink-0 rounded bg-salt/10 border border-salt/20 flex items-center justify-center text-salt">
+                            <i data-lucide="zap" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-display text-lg font-bold text-white mb-1">High-Surge Capable</h4>
+                            <p class="text-xs text-parchment/50 leading-relaxed">Engineered for the brutal inrush current of gyroscopic stabilizer spin-up. Our SALT START&trade; packs are sized specifically for the 3-5x surge multiplier that stabilizers demand at startup.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-admiralty/60 border border-salt/10 rounded-lg p-8">
+                    <h3 class="font-display text-2xl font-bold text-white mb-6">Sodium vs. Lithium vs. Lead-Acid</h3>
+                    <table class="w-full text-xs">
+                        <thead>
+                            <tr class="border-b border-salt/10">
+                                <th class="text-left py-3 text-parchment/40 font-mono uppercase tracking-wider">Metric</th>
+                                <th class="text-center py-3 text-salt font-bold">Na-Ion</th>
+                                <th class="text-center py-3 text-parchment/40">LiFePO4</th>
+                                <th class="text-center py-3 text-parchment/40">Lead-Acid</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-parchment/60">
+                            <tr class="border-b border-salt/5"><td class="py-3">Cycle Life</td><td class="text-center text-salt font-bold">3,000+</td><td class="text-center">2,000</td><td class="text-center">500</td></tr>
+                            <tr class="border-b border-salt/5"><td class="py-3">Fire Risk</td><td class="text-center text-salt font-bold">None</td><td class="text-center text-signal">Possible</td><td class="text-center">Low</td></tr>
+                            <tr class="border-b border-salt/5"><td class="py-3">Temp Range</td><td class="text-center text-salt font-bold">-20 to 60&deg;C</td><td class="text-center">0 to 45&deg;C</td><td class="text-center">-20 to 50&deg;C</td></tr>
+                            <tr class="border-b border-salt/5"><td class="py-3">Weight (per kWh)</td><td class="text-center text-salt font-bold">~12 kg</td><td class="text-center">~10 kg</td><td class="text-center">~30 kg</td></tr>
+                            <tr class="border-b border-salt/5"><td class="py-3">Surge Capability</td><td class="text-center text-salt font-bold">Excellent</td><td class="text-center">Good</td><td class="text-center">Fair</td></tr>
+                            <tr class="border-b border-salt/5"><td class="py-3">Cost / kWh</td><td class="text-center text-salt font-bold">$$$</td><td class="text-center">$$$$</td><td class="text-center">$$</td></tr>
+                            <tr><td class="py-3">Marine Insurance</td><td class="text-center text-salt font-bold">No issue</td><td class="text-center text-signal">Varies</td><td class="text-center">Standard</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="mt-4 text-[10px] text-parchment/30 font-mono">Source: Seakeeper Battery Sizing Recommendations TB-90621-3 (Mar 2024) + STAR internal testing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY INDEPENDENT -->
+    <section id="independence" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 border border-brass/20 bg-brass/5 px-3 py-1 rounded-full text-xs font-semibold text-brass uppercase tracking-wider mb-4">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i> Independence Matters
+                </div>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Why OEM-Independent</h2>
+                <div class="w-24 h-[1px] bg-brass mx-auto mb-6"></div>
+                <p class="text-parchment/60 max-w-2xl mx-auto text-sm leading-relaxed">
+                    Dealer networks serve the manufacturer. We serve the vessel owner.
+                    That difference changes everything about how your marine energy system is designed, installed, and supported.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-bearing/20 border border-brass/10 rounded-lg p-8">
+                    <h3 class="font-display text-xl font-bold text-brass mb-4">Dealer Model</h3>
+                    <ul class="space-y-3 text-sm text-parchment/50">
+                        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 text-signal mt-0.5 shrink-0"></i> Locked to one manufacturer's product line</li>
+                        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 text-signal mt-0.5 shrink-0"></i> Sales quotas drive recommendations, not your needs</li>
+                        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 text-signal mt-0.5 shrink-0"></i> Termination risk: lose your service provider overnight</li>
+                        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 text-signal mt-0.5 shrink-0"></i> Markup on parts and labor to fund dealer overhead</li>
+                        <li class="flex items-start gap-3"><i data-lucide="x" class="w-4 h-4 text-signal mt-0.5 shrink-0"></i> OEM controls your marketing, pricing, and territory</li>
+                    </ul>
+                </div>
+                <div class="bg-bearing/20 border border-salt/10 rounded-lg p-8">
+                    <h3 class="font-display text-xl font-bold text-salt mb-4">Independent Model</h3>
+                    <ul class="space-y-3 text-sm text-parchment/50">
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-support mt-0.5 shrink-0"></i> Best-in-class components from any manufacturer</li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-support mt-0.5 shrink-0"></i> Recommendations based on your vessel, not sales targets</li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-support mt-0.5 shrink-0"></i> Permanent relationship: no one can terminate your service</li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-support mt-0.5 shrink-0"></i> Direct pricing with transparent labor rates</li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-support mt-0.5 shrink-0"></i> We answer to you. Period.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 p-6 bg-brass/5 border border-brass/20 rounded-lg text-center">
+                <p class="text-xs italic text-brass/80 font-mono">
+                    "We built Salty Marine because we watched firsthand how dealer networks prioritize manufacturer revenue over vessel owner outcomes. 
+                    After 15 years installing these systems, we know what works. Now we work for the boat owner, not the factory."
+                </p>
+                <p class="text-[10px] text-parchment/30 mt-2">— Jake Stratmann, Founder</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section id="story" class="bg-bearing/20 py-20 px-6 border-y border-brass/5">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 border border-brass/20 bg-brass/5 px-3 py-1 rounded-full text-xs font-semibold text-brass uppercase tracking-wider mb-4">
+                    <i data-lucide="book-open" class="w-4 h-4"></i> Our Story
+                </div>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Built in the Trenches</h2>
+                <div class="w-24 h-[1px] bg-brass mx-auto mb-6"></div>
+            </div>
+
+            <div class="prose prose-invert max-w-none space-y-6 text-sm text-parchment/70 leading-relaxed">
+                <p>
+                    In 2010, Jake Stratmann began installing marine stabilization and power systems in Fort Lauderdale.
+                    By 2022, Starboard Yacht Group had grown to a <strong class="text-parchment/90">$7.68 million</strong> annual revenue marine services operation
+                    — the authorized Seakeeper dealer for South Florida, with a full-service marine center handling everything
+                    from electrical rewires to complete gyroscopic stabilizer installations.
+                </p>
+                <p>
+                    Over 15 years and hundreds of installations, one problem kept appearing: <strong class="text-parchment/90">the power systems
+                    weren't keeping up with the stabilizers.</strong> Gyroscopic stabilizers draw massive surge current on startup.
+                    Existing battery systems — whether lead-acid AGM or lithium — were either too heavy, too dangerous in marine
+                    environments, or simply undersized for the load. Boat owners were told "just run the generator." That answer
+                    wasn't good enough.
+                </p>
+                <p>
+                    When sodium-ion battery technology became commercially viable, we recognized it immediately:
+                    <strong class="text-parchment/90">non-flammable, temperature-tolerant, high-surge capable, and
+                    marine-insurance friendly.</strong> This was the chemistry the marine industry had been waiting for.
+                </p>
+                <p>
+                    Salty Marine was born from that insight. We took 15 years of hands-on stabilizer installation
+                    experience — knowing exactly where the power bottlenecks live on real vessels — and combined it with
+                    next-generation sodium-ion energy storage. The result: <strong class="text-parchment/90">SALT START&trade;</strong>,
+                    the first purpose-built sodium-ion marine battery system designed specifically for stabilizer surge loads.
+                </p>
+                <p>
+                    Today, Salty Marine operates as an independent marine energy company under the
+                    <a href="https://starboardtechgroup.com" class="text-salt hover:text-salt-dark transition underline" target="_blank" rel="noopener">Starboard Tech Group</a>
+                    umbrella. Our R&D is conducted through
+                    <a href="https://oceanpower.life" class="text-salt hover:text-salt-dark transition underline" target="_blank" rel="noopener">Starboard Tech & Research (STAR)</a>.
+                    We answer to vessel owners, not manufacturers.
+                </p>
+                <p class="font-mono text-xs text-brass/60 tracking-wider italic text-center pt-4">
+                    "Truth Is The Right Answer — and the right power system makes everything else work."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GYRO POWER KIT PRE-ORDER — W923 P0-2 -->
+    <section id="pre-order" class="py-20 px-6 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-ocean/40 via-admiralty to-admiralty border-t border-salt/10">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 border border-brass/30 bg-brass/5 px-3 py-1 rounded-full text-xs font-semibold text-brass uppercase tracking-wider mb-6">
+                <i data-lucide="package" class="w-4 h-4"></i> Limited Pre-Order — Q3 2026
+            </div>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Gyro &amp; Fin Power Kits</h2>
+            <div class="w-24 h-[1px] bg-brass mx-auto mb-6"></div>
+            <p class="text-parchment/60 max-w-2xl mx-auto text-sm leading-relaxed mb-4">
+                Sodium-ion battery kits for Humphree all-speed interceptor fins (12VDC &amp; 24VDC) and marine gyro stabilizers.
+                Run your stabilization systems at anchor &mdash; no generator. Ships Q4 2026.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <a href="/gyro-kits" class="inline-flex items-center gap-2 bg-salt/10 border border-salt/30 hover:bg-salt/20 text-salt px-4 py-2 rounded text-xs font-bold uppercase tracking-wider transition">
+                    <i data-lucide="waves" class="w-3 h-3"></i> Humphree Fin Kits &mdash; 12V &amp; 24V
+                </a>
+                <a href="/gyro-kits" class="inline-flex items-center gap-2 bg-brass/10 border border-brass/30 hover:bg-brass/20 text-brass px-4 py-2 rounded text-xs font-bold uppercase tracking-wider transition">
+                    <i data-lucide="rotate-3d" class="w-3 h-3"></i> Full Kit Lineup &rarr;
+                </a>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-4 mb-10 text-left">
+                <div class="bg-bearing/20 border border-brass/15 rounded-lg p-5">
+                    <div class="font-mono text-xs text-brass/70 uppercase tracking-widest mb-2">SALT START™</div>
+                    <div class="font-display text-xl font-bold text-white mb-1">Starter Kit</div>
+                    <div class="font-display text-3xl font-bold text-brass mb-3">$3,499</div>
+                    <ul class="space-y-1 text-xs text-parchment/50">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> 10 kWh sodium-ion pack</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> Seakeeper 1-3 / Quick MC2 X 15 / DG3</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> 4–5 hr anchor runtime</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> Marine-grade BMS</li>
+                    </ul>
+                </div>
+                <div class="bg-salt/10 border border-salt/30 rounded-lg p-5 relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-salt text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+                    <div class="font-mono text-xs text-salt/70 uppercase tracking-widest mb-2">SALT SURGE™</div>
+                    <div class="font-display text-xl font-bold text-white mb-1">Standard Kit</div>
+                    <div class="font-display text-3xl font-bold text-salt mb-3">$5,999</div>
+                    <ul class="space-y-1 text-xs text-parchment/50">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> 20 kWh sodium-ion pack</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> Quick MC2 X 25 / Seakeeper 3 / twin-DC</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> 6–8 hr anchor runtime</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> Shore power / solar input</li>
+                    </ul>
+                </div>
+                <div class="bg-bearing/20 border border-brass/15 rounded-lg p-5">
+                    <div class="font-mono text-xs text-brass/70 uppercase tracking-widest mb-2">SALT FLEET™</div>
+                    <div class="font-display text-xl font-bold text-white mb-1">Commercial Kit</div>
+                    <div class="font-display text-3xl font-bold text-brass mb-3">Custom</div>
+                    <ul class="space-y-1 text-xs text-parchment/50">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> 30–60 kWh configurable</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> Twin-DC gyro / AC-to-DC inverter systems</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> Full install included</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-support flex-shrink-0"></i> Fleet pricing available</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-bearing/30 border border-salt/20 rounded-xl p-8 text-left mb-8">
+                <h3 class="font-display text-2xl font-bold text-white text-center mb-6">Join the Pre-Order Waitlist</h3>
+                <form id="preorderForm" onsubmit="submitPreorder(event)">
+                    <div class="grid sm:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block text-[10px] font-bold text-salt uppercase tracking-widest mb-2">Name *</label>
+                            <input id="pName" required type="text" placeholder="Captain / Owner" class="w-full bg-admiralty border border-salt/20 rounded px-4 py-3 text-parchment text-sm focus:outline-none focus:border-salt/50">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-salt uppercase tracking-widest mb-2">Email *</label>
+                            <input id="pEmail" required type="email" placeholder="you@example.com" class="w-full bg-admiralty border border-salt/20 rounded px-4 py-3 text-parchment text-sm focus:outline-none focus:border-salt/50">
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block text-[10px] font-bold text-salt uppercase tracking-widest mb-2">Vessel (LOA + Type)</label>
+                            <input id="pVessel" type="text" placeholder="e.g. 52' Viking Express" class="w-full bg-admiralty border border-salt/20 rounded px-4 py-3 text-parchment text-sm focus:outline-none focus:border-salt/50">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-salt uppercase tracking-widest mb-2">Kit Interest</label>
+                            <select id="pKit" class="w-full bg-admiralty border border-salt/20 rounded px-4 py-3 text-parchment text-sm focus:outline-none focus:border-salt/50">
+                                <option value="">Select kit...</option>
+                                <optgroup label="Humphree Fin Kits">
+                                    <option value="fin-12vdc">SALT FIN-12™ &mdash; 12VDC Humphree Kit ($1,899)</option>
+                                    <option value="fin-24vdc">SALT FIN-24™ &mdash; 24VDC Humphree Kit ($2,899)</option>
+                                </optgroup>
+                                <optgroup label="Gyro Stabilizer Kits">
+                                    <option value="gyro-starter">SALT START™ &mdash; Starter Gyro Kit ($3,499)</option>
+                                    <option value="gyro-standard">SALT SURGE™ &mdash; Standard Gyro Kit ($5,999)</option>
+                                    <option value="gyro-commercial">SALT FLEET™ &mdash; Commercial (Custom)</option>
+                                </optgroup>
+                                <optgroup label="Combo Systems">
+                                    <option value="combo-12v">SALT COMBO-12™ &mdash; Fin + Gyro 12V ($4,999)</option>
+                                    <option value="combo-24v">SALT COMBO-24™ &mdash; Fin + Gyro 24V ($7,499)</option>
+                                </optgroup>
+                                <option value="not-sure">Not Sure Yet</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full bg-salt hover:bg-salt-dark text-white py-4 rounded font-bold tracking-wide transition shadow-lg shadow-salt/20">
+                        Reserve My Spot — Free, No Obligation
+                    </button>
+                    <p id="pStatus" class="text-center mt-3 text-sm min-h-[20px]"></p>
+                </form>
+                <p class="text-center text-[11px] text-parchment/30 mt-4">No payment required. We'll contact you with final specs and pricing before charging anything. Ships Q4 2026.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 text-xs text-parchment/40">
+                <span class="flex items-center gap-1"><i data-lucide="shield-check" class="w-3 h-3 text-salt"></i> Non-flammable sodium-ion chemistry</span>
+                <span class="flex items-center gap-1"><i data-lucide="anchor" class="w-3 h-3 text-salt"></i> Marine-grade IP67 housing</span>
+                <span class="flex items-center gap-1"><i data-lucide="zap" class="w-3 h-3 text-salt"></i> Drop-in charging compatibility</span>
+                <span class="flex items-center gap-1"><i data-lucide="tool" class="w-3 h-3 text-salt"></i> Fort Lauderdale engineering</span>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    async function submitPreorder(e) {
+        e.preventDefault();
+        const btn = document.querySelector('#preorderForm button[type=submit]');
+        const status = document.getElementById('pStatus');
+        btn.disabled = true;
+        btn.textContent = 'Reserving...';
+        const payload = {
+            name: document.getElementById('pName').value,
+            email: document.getElementById('pEmail').value,
+            vessel: document.getElementById('pVessel').value,
+            kit: document.getElementById('pKit').value,
+            source: 'salty-marine-preorder',
+            product: 'gyro-power-kit',
+            ts: new Date().toISOString()
+        };
+        try {
+            const r = await fetch('https://salty-marine-www.renee-08e.workers.dev/api/leads/capture', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(payload)
+            });
+            if (r.ok) {
+                status.style.color = '#4ade80';
+                status.textContent = '✓ You\'re on the list! We\'ll be in touch with specs before Q4.';
+                document.getElementById('preorderForm').reset();
+            } else { throw new Error(); }
+        } catch (_) {
+            const mailto = `mailto:jake@helmlegal.net?subject=Gyro Power Kit Pre-Order — ${encodeURIComponent(payload.kit || 'Interest')}&body=Name: ${encodeURIComponent(payload.name)}%0AEmail: ${encodeURIComponent(payload.email)}%0AVessel: ${encodeURIComponent(payload.vessel)}%0AKit: ${encodeURIComponent(payload.kit)}`;
+            status.innerHTML = `<a href="${mailto}" style="color:#0EA5E9;">Send via email instead &#8594;</a>`;
+        }
+        btn.disabled = false;
+        btn.textContent = 'Reserve My Spot — Free, No Obligation';
+    }
+    </script>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 border border-salt/20 bg-salt/5 px-3 py-1 rounded-full text-xs font-semibold text-salt uppercase tracking-wider mb-6">
+                <i data-lucide="message-circle" class="w-4 h-4"></i> Let's Talk
+            </div>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Get Your Vessel Quoted</h2>
+            <div class="w-24 h-[1px] bg-salt mx-auto mb-6"></div>
+            <p class="text-parchment/60 max-w-xl mx-auto text-sm leading-relaxed mb-8">
+                Every vessel is different. Tell us what you have, what you need, and we'll engineer a solution
+                that fits your boat and your budget. No dealer markup. No sales pressure.
+            </p>
+
+            <div class="grid sm:grid-cols-3 gap-6 mb-10">
+                <div class="bg-bearing/20 border border-salt/10 rounded-lg p-6">
+                    <i data-lucide="mail" class="w-6 h-6 text-salt mx-auto mb-3"></i>
+                    <h4 class="font-display text-sm font-bold text-white mb-1">Email</h4>
+                    <a href="mailto:jake@helmlegal.net?subject=Salty%20Marine%20Quote%20Request" class="text-xs text-salt hover:underline">jake@helmlegal.net</a>
+                </div>
+                <div class="bg-bearing/20 border border-salt/10 rounded-lg p-6">
+                    <i data-lucide="phone" class="w-6 h-6 text-salt mx-auto mb-3"></i>
+                    <h4 class="font-display text-sm font-bold text-white mb-1">Phone</h4>
+                    <a href="tel:+19548738546" class="text-xs text-salt hover:underline">(954) 873-8546</a>
+                </div>
+                <div class="bg-bearing/20 border border-salt/10 rounded-lg p-6">
+                    <i data-lucide="map-pin" class="w-6 h-6 text-salt mx-auto mb-3"></i>
+                    <h4 class="font-display text-sm font-bold text-white mb-1">Location</h4>
+                    <p class="text-xs text-parchment/50">Fort Lauderdale, FL</p>
+                </div>
+            </div>
+
+            <a href="mailto:jake@helmlegal.net?subject=Salty%20Marine%20Quote%20Request&body=Vessel%20Make/Model:%0AYear:%0AStabilizer%20(if%20installed):%0AWhat%20I%20need:" class="bg-salt hover:bg-salt-dark text-white px-10 py-4 rounded font-semibold transition inline-flex items-center gap-2 shadow-lg shadow-salt/10">
+                <i data-lucide="send" class="w-4 h-4"></i> Request A Custom Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-admiralty border-t border-salt/10 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-6 h-6 rounded border border-salt flex items-center justify-center bg-salt/5">
+                    <i data-lucide="battery-charging" class="w-3 h-3 text-salt"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-display text-sm font-bold tracking-wider text-salt uppercase leading-none">SALTY</span>
+                    <span class="text-[8px] uppercase tracking-[0.25em] text-parchment/40">Marine Energy</span>
+                </div>
+            </div>
+
+            <div class="text-center text-[10px] text-parchment/40 max-w-lg leading-relaxed">
+                &copy; 2026 Salty Marine. All rights reserved.<br>
+                A <a href="https://starboardtechgroup.com" target="_blank" rel="noopener" class="text-brass hover:text-brass/80 transition">Starboard Tech Group</a> company.
+                R&amp;D by <a href="https://oceanpower.life" target="_blank" rel="noopener" class="text-salt hover:text-salt/80 transition">Starboard Tech &amp; Research (STAR)</a>.<br>
+                Fort Lauderdale, FL.
+                <br><br>
+                <span class="font-mono text-parchment/25">saltymarine.com &bull; saltymarinebatteries.com &bull; Truth Is The Right Answer</span>
+            </div>
+
+            <div class="flex flex-col items-end gap-3">
+                <div class="flex gap-4 text-xs font-semibold text-salt/60">
+                    <a href="#solutions" class="hover:text-salt transition">Solutions</a> &bull;
+                    <a href="#technology" class="hover:text-salt transition">Technology</a> &bull;
+                    <a href="#contact" class="hover:text-salt transition">Contact</a>
+                </div>
+                <div class="flex flex-wrap gap-3 text-[10px] text-parchment/30">
+                    <a href="https://starboardtechgroup.com" target="_blank" rel="noopener" class="hover:text-brass transition">SGH</a>
+                    <a href="https://oceanpower.life" target="_blank" rel="noopener" class="hover:text-salt transition">STAR</a>
+                    <a href="https://starboardyacht.com" target="_blank" rel="noopener" class="hover:text-brass transition">SYG</a>
+                    <a href="https://upgradegyro.com" target="_blank" rel="noopener" class="hover:text-brass transition">UpgradeGyro</a>
+                    <a href="https://www.helmlegal.net" target="_blank" rel="noopener" class="hover:text-brass transition">HelmLegal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Salty Marine",
+      "url": "https://saltymarine.com",
+      "description": "Sodium-ion marine battery systems, independent stabilizer power solutions, and energy automation for vessels.",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Starboard Tech & Research Inc.",
+        "url": "https://starboardtechandresearch.com"
+      },
+      "areaServed": "Fort Lauderdale, FL",
+      "telephone": "+1-954-873-8546",
+      "email": "hello@helmlegal.net"
+    }
+    </script>
+</body>
+</html>

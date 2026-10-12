@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sodium-Ion vs Lithium vs AGM — Marine Battery Chemistry Compared | Salty Marine</title>
+    <meta name="description" content="Side-by-side marine battery chemistry comparison: sodium-ion vs lithium-ion (LiFePO4) vs AGM for house banks and stabilizer power. Cycle life, thermal behavior, maintenance, and real marine use cases.">
+    <meta name="keywords" content="sodium ion vs lithium marine battery, lifepo4 vs sodium ion, agm vs lithium boat battery, marine house bank chemistry, boat battery comparison, stabilizer battery">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://saltymarine.com/compare">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <meta property="og:title" content="Sodium-Ion vs Lithium vs AGM — Marine Battery Chemistry Compared | Salty Marine">
+    <meta property="og:description" content="Side-by-side comparison of marine battery chemistries for house banks and stabilizer power. Cycle life, thermal behavior, maintenance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saltymarine.com/compare">
+    <meta property="og:site_name" content="Salty Marine">
+    <meta property="og:image" content="https://saltymarine.com/img/og-brand-card.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sodium-Ion vs Lithium vs AGM — Marine Battery Chemistry Compared">
+    <meta name="twitter:image" content="https://saltymarine.com/img/og-brand-card.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        admiralty: '#0B1A2E', brass: '#C8A24D', parchment: '#F5F0E8',
+                        bearing: '#1E3A5F', support: '#1B6B4A', signal: '#B22234',
+                        salt: '#0EA5E9', 'salt-dark': '#0369A1',
+                    },
+                    fontFamily: {
+                        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        body: ['"DM Sans"', '-apple-system', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'Consolas', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'DM Sans', sans-serif; background-color: #0B1A2E; color: #F5F0E8; }
+        .card-glow:hover { box-shadow: 0 0 24px rgba(14,165,233,0.15); border-color: rgba(14,165,233,0.4); transform: translateY(-2px); }
+        .card-glow { transition: all 0.3s ease; }
+        th, td { padding: 0.85rem 1rem; text-align: left; vertical-align: top; }
+        tbody tr { border-top: 1px solid rgba(14,165,233,0.08); }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Sodium-Ion vs Lithium vs AGM — Marine Battery Chemistry Compared",
+  "description": "Side-by-side marine battery chemistry comparison for house banks and stabilizer power systems.",
+  "url": "https://saltymarine.com/compare",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Salty Marine",
+    "url": "https://saltymarine.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Salty Marine",
+    "url": "https://saltymarine.com"
+  }
+}
+</script>
+</head>
+<body class="bg-admiralty text-parchment antialiased">
+
+    <!-- NAV -->
+    <nav class="sticky top-0 z-50 bg-admiralty/95 backdrop-blur-md border-b border-salt/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded border border-salt flex items-center justify-center bg-salt/5">
+                    <i data-lucide="battery-charging" class="w-4 h-4 text-salt"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-display text-xl font-bold tracking-wider text-salt uppercase leading-none">SALTY</span>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-parchment/40">Marine Energy</span>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-parchment/60">
+                <a href="/services" class="hover:text-salt transition">Services</a>
+                <a href="/technology" class="hover:text-salt transition">Technology</a>
+                <a href="/battery-sizing" class="hover:text-salt transition">Battery Sizing</a>
+                <a href="/compare" class="text-salt">Compare</a>
+                <a href="/faq" class="hover:text-salt transition">FAQ</a>
+                <a href="/#contact" class="hover:text-salt transition">Contact</a>
+            </div>
+            <a href="/#pre-order" class="hidden md:flex items-center gap-2 border border-brass/40 bg-brass/10 hover:bg-brass/20 text-brass px-4 py-2 rounded text-xs font-bold uppercase tracking-wider transition">
+                <i data-lucide="package" class="w-3 h-3"></i> Pre-Order Kit
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="pt-20 pb-16 px-6 border-b border-salt/5 bg-gradient-to-b from-bearing/20 to-admiralty">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 border border-salt/20 bg-salt/5 px-3 py-1 rounded-full text-xs font-semibold text-salt uppercase tracking-wider mb-6">
+                <i data-lucide="git-compare" class="w-4 h-4"></i> Honest Chemistry Comparison
+            </div>
+            <h1 class="font-display text-5xl md:text-6xl font-bold mb-6">Sodium-Ion vs Lithium vs AGM</h1>
+            <p class="text-lg text-parchment/60 max-w-2xl mx-auto leading-relaxed">
+                No chemistry is right for every boat. Here's how the three options actually
+                compare for marine house banks and stabilizer power — including where
+                sodium-ion is <em>not</em> the answer.
+            </p>
+        </div>
+    </header>
+
+    <!-- COMPARISON TABLE -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="overflow-x-auto rounded-lg border border-salt/10">
+            <table class="w-full text-sm">
+                <thead class="bg-bearing/30 text-xs uppercase tracking-wider text-parchment/50">
+                    <tr>
+                        <th class="w-1/4">Attribute</th>
+                        <th class="w-1/4 text-salt">Sodium-Ion</th>
+                        <th class="w-1/4">Lithium (LiFePO&#8324;)</th>
+                        <th class="w-1/4">AGM (Lead-Acid)</th>
+                    </tr>
+                </thead>
+                <tbody class="text-parchment/70">
+                    <tr>
+                        <td class="font-semibold text-parchment/90">Thermal behavior</td>
+                        <td>High thermal stability; chemistry is inherently resistant to thermal runaway at cell level.</td>
+                        <td>Stable for lithium class, but thermal-runaway protection depends on pack design + BMS quality.</td>
+                        <td>No runaway risk; heavy and venting considerations if overcharged.</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-parchment/90">Cycle life (typical)</td>
+                        <td>~3,000–6,000 cycles depending on cell and depth of discharge.</td>
+                        <td>~2,000–5,000 cycles depending on cell and depth of discharge.</td>
+                        <td>~300–700 cycles; degrades quickly with deep discharge.</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-parchment/90">Usable depth of discharge</td>
+                        <td>High — designed for deep cycling.</td>
+                        <td>High — typically ~80–90% usable.</td>
+                        <td>~50% recommended to preserve life.</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-parchment/90">Raw material exposure</td>
+                        <td>No lithium, cobalt, or nickel — sodium is abundant and low-cost.</td>
+                        <td>Lithium + iron/phosphate supply chain; no cobalt in LiFePO&#8324;.</td>
+                        <td>Lead — established recycling stream, heavy.</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-parchment/90">Weight / energy density</td>
+                        <td>Lighter than AGM; generally lower density than LiFePO&#8324; per Wh today.</td>
+                        <td>Highest practical energy density of the three.</td>
+                        <td>Heaviest; lowest density.</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-parchment/90">Cold-weather charging</td>
+                        <td>Strong low-temperature charge acceptance vs lithium chemistries.</td>
+                        <td>Charge below freezing requires heating or current limiting.</td>
+                        <td>Charges at low temps but loses capacity in cold.</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-parchment/90">Maintenance</td>
+                        <td>Sealed; no watering.</td>
+                        <td>Sealed; no watering.</td>
+                        <td>Sealed; limited service life under cyclic loads.</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-parchment/90">Upfront cost</td>
+                        <td>Premium vs AGM; competitive trajectory vs lithium as supply scales.</td>
+                        <td>Premium vs AGM.</td>
+                        <td>Lowest upfront; highest lifetime cost under deep cycling.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-xs text-parchment/40 mt-4 leading-relaxed">
+            Specifications vary by cell manufacturer and pack design. Figures are typical
+            ranges, not guarantees — we size every bank against the vessel's measured load
+            profile before recommending a chemistry.
+        </p>
+    </section>
+
+    <!-- WHEN EACH WINS -->
+    <section class="py-16 px-6 bg-bearing/20 border-y border-salt/5">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="card-glow bg-admiralty border border-salt/15 rounded-lg p-8">
+                <i data-lucide="battery-charging" class="w-8 h-8 text-salt mb-4"></i>
+                <h3 class="font-display text-2xl font-bold mb-3 text-salt">Sodium-ion wins when</h3>
+                <ul class="text-sm text-parchment/60 space-y-2 leading-relaxed">
+                    <li>You want lithium-class cycling without lithium-cell thermal exposure.</li>
+                    <li>Raw-material independence (no Li/Co/Ni) matters to your operation.</li>
+                    <li>You're building a stabilizer or house bank meant for deep daily cycling.</li>
+                    <li>Cold-temperature charging is a real requirement.</li>
+                </ul>
+            </div>
+            <div class="card-glow bg-admiralty border border-salt/15 rounded-lg p-8">
+                <i data-lucide="zap" class="w-8 h-8 text-brass mb-4"></i>
+                <h3 class="font-display text-2xl font-bold mb-3">LiFePO&#8324; wins when</h3>
+                <ul class="text-sm text-parchment/60 space-y-2 leading-relaxed">
+                    <li>Maximum energy density per pound is the binding constraint.</li>
+                    <li>Your build already assumes lithium infrastructure and BMS.</li>
+                    <li>Weight budget is tighter than budget budget.</li>
+                </ul>
+            </div>
+            <div class="card-glow bg-admiralty border border-salt/15 rounded-lg p-8">
+                <i data-lucide="anchor" class="w-8 h-8 text-parchment/50 mb-4"></i>
+                <h3 class="font-display text-2xl font-bold mb-3">AGM still wins when</h3>
+                <ul class="text-sm text-parchment/60 space-y-2 leading-relaxed">
+                    <li>The bank sees light cycling or is primarily a standby/start role.</li>
+                    <li>Upfront budget is the hard constraint.</li>
+                    <li>You need drop-in compatibility with an existing lead-acid system today.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-6 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="font-display text-4xl font-bold mb-4">Not Sure Which Bank Fits Your Vessel?</h2>
+            <p class="text-parchment/60 text-sm mb-8">Run the sizing tool, or send us your vessel and load profile — we'll come back with a real engineering answer, not a chemistry pitch.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/battery-sizing" class="bg-salt hover:bg-salt-dark text-white px-8 py-4 rounded font-semibold transition inline-flex items-center gap-2 shadow-lg shadow-salt/10">
+                    <i data-lucide="calculator" class="w-4 h-4"></i> Size My Bank
+                </a>
+                <a href="/#pre-order" class="border border-brass/40 bg-brass/10 hover:bg-brass/20 text-brass px-8 py-4 rounded font-semibold transition inline-flex items-center gap-2">
+                    <i data-lucide="package" class="w-4 h-4"></i> Pre-Order Kit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-admiralty border-t border-salt/10 py-10 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-parchment/30">
+            <div class="flex items-center gap-3">
+                <span class="font-display text-sm font-bold text-salt">SALTY MARINE</span>
+                <span class="text-parchment/20">|</span>
+                <span>A Starboard Tech Group Company</span>
+            </div>
+            <div class="flex gap-6">
+                <a href="/" class="hover:text-salt transition">Home</a>
+                <a href="/services" class="hover:text-salt transition">Services</a>
+                <a href="/technology" class="hover:text-salt transition">Technology</a>
+                <a href="/battery-sizing" class="hover:text-salt transition">Battery Sizing</a>
+                <a href="/compare" class="text-salt">Compare</a>
+                <a href="/faq" class="hover:text-salt transition">FAQ</a>
+            </div>
+            <span>© 2026 Salty Marine LLC · Fort Lauderdale, FL</span>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

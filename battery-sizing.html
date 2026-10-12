@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Battery Sizing Calculator — Gyro & House Bank | Salty Marine</title>
+    <meta name="description" content="Free marine battery sizing calculator. Find the right sodium-ion battery system for your gyro stabilizer or house bank. Sized for Seakeeper, Dometic DG3, Quick, Smart Gyro. Fort Lauderdale marine engineers.">
+    <meta name="keywords" content="marine battery sizing, gyro battery calculator, seakeeper battery size, sodium ion marine, stabilizer battery calculator, marine house bank sizing, anchor battery calculator">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://saltymarine.com/battery-sizing">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <meta property="og:title" content="Marine Battery Sizing Calculator | Salty Marine">
+    <meta property="og:description" content="Size your sodium-ion marine battery system. Enter your stabilizer model and anchor runtime target — get an instant system recommendation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saltymarine.com/battery-sizing">
+    <meta property="og:site_name" content="Salty Marine">
+    <meta property="og:image" content="https://saltymarine.com/img/og-brand-card.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Salty Marine Battery Sizing Calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marine Battery Sizing Calculator | Salty Marine">
+    <meta name="twitter:image" content="https://saltymarine.com/img/og-brand-card.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        admiralty: '#0B1A2E', brass: '#C8A24D', parchment: '#F5F0E8',
+                        bearing: '#1E3A5F', support: '#1B6B4A', signal: '#B22234',
+                        salt: '#0EA5E9', 'salt-dark': '#0369A1',
+                    },
+                    fontFamily: {
+                        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        body: ['"DM Sans"', '-apple-system', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'Consolas', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'DM Sans', sans-serif; background-color: #0B1A2E; color: #F5F0E8; }
+        select, input[type=range] { accent-color: #0EA5E9; }
+    </style>
+<!-- W2396 SEO level-up -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Marine Battery Sizing Calculator \u2014 Gyro & House Bank | Salty Marine",
+  "description": "Free marine battery sizing calculator. Find the right sodium-ion battery system for your gyro stabilizer or house bank. Sized for Seakeeper, Dometic DG3, Quick, Smart Gyro. Fort Lauderdale marine engineers.",
+  "url": "https://saltymarine.com/battery-sizing",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Salty Marine",
+    "url": "https://saltymarine.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Salty Marine",
+    "url": "https://saltymarine.com",
+    "description": "Independent marine battery and energy systems. Sodium-ion power, stabilizer batteries, generator-free anchor operation."
+  }
+}
+</script>
+</head>
+<body class="bg-admiralty text-parchment antialiased">
+
+    <!-- NAV -->
+    <nav class="sticky top-0 z-50 bg-admiralty/95 backdrop-blur-md border-b border-salt/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded border border-salt flex items-center justify-center bg-salt/5">
+                    <i data-lucide="battery-charging" class="w-4 h-4 text-salt"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-display text-xl font-bold tracking-wider text-salt uppercase leading-none">SALTY</span>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-parchment/40">Marine Energy</span>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-parchment/60">
+                <a href="/services" class="hover:text-salt transition">Services</a>
+                <a href="/technology" class="hover:text-salt transition">Technology</a>
+                <a href="/battery-sizing" class="text-salt">Battery Sizing</a>
+                <a href="/compare" class="hover:text-salt transition">Compare</a>
+                <a href="/faq" class="hover:text-salt transition">FAQ</a>
+
+                <a href="/compare" class="hover:text-salt transition">Compare</a>
+                <a href="/faq" class="hover:text-salt transition">FAQ</a>                <a href="/#contact" class="hover:text-salt transition">Contact</a>
+            </div>
+            <a href="/#pre-order" class="hidden md:flex items-center gap-2 border border-brass/40 bg-brass/10 hover:bg-brass/20 text-brass px-4 py-2 rounded text-xs font-bold uppercase tracking-wider transition">
+                <i data-lucide="package" class="w-3 h-3"></i> Pre-Order Kit
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="pt-20 pb-12 px-6 border-b border-salt/5 bg-gradient-to-b from-bearing/20 to-admiralty">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 border border-salt/20 bg-salt/5 px-3 py-1 rounded-full text-xs font-semibold text-salt uppercase tracking-wider mb-6">
+                <i data-lucide="calculator" class="w-4 h-4"></i> Engineering Tool
+            </div>
+            <h1 class="font-display text-5xl md:text-6xl font-bold mb-4">Battery Sizing Calculator</h1>
+            <p class="text-parchment/60 text-lg leading-relaxed">
+                Select your stabilizer model and target anchor runtime. We'll show you the system size you need
+                and the kit that fits.
+            </p>
+        </div>
+    </header>
+
+    <!-- CALCULATOR -->
+    <section class="py-16 px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-bearing/20 border border-salt/10 rounded-xl p-8 mb-8">
+
+                <!-- Step 1: Stabilizer -->
+                <div class="mb-8">
+                    <label class="block text-[10px] font-bold text-salt uppercase tracking-widest mb-3">Step 1 — Select Your Stabilizer</label>
+                    <select id="gyroModel" onchange="calculate()" class="w-full bg-admiralty border border-salt/20 rounded px-4 py-3 text-parchment text-sm focus:outline-none focus:border-salt/50">
+                        <option value="">— Choose model —</option>
+                        <optgroup label="Seakeeper">
+                            <option value="sk2" data-kw="0.8">Seakeeper SK2 (0.8 kW steady)</option>
+                            <option value="sk6" data-kw="1.5">Seakeeper SK6 (1.5 kW steady)</option>
+                            <option value="sk9" data-kw="2.0">Seakeeper SK9 (2.0 kW steady)</option>
+                            <option value="sk16" data-kw="3.2">Seakeeper SK16 (3.2 kW steady)</option>
+                            <option value="sk26" data-kw="4.5">Seakeeper SK26 (4.5 kW steady)</option>
+                            <option value="sk35" data-kw="5.5">Seakeeper SK35 (5.5 kW steady)</option>
+                            <option value="sk40" data-kw="6.5">Seakeeper SK40 (6.5 kW steady)</option>
+                        </optgroup>
+                        <optgroup label="Dometic">
+                            <option value="dg3" data-kw="1.2">Dometic DG3 (1.2 kW steady)</option>
+                            <option value="dg6" data-kw="2.8">Dometic DG6 (2.8 kW steady)</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="quick" data-kw="1.8">Quick (avg 1.8 kW)</option>
+                            <option value="smartgyro" data-kw="2.2">Smart Gyro (avg 2.2 kW)</option>
+                            <option value="custom" data-kw="0">Custom — I'll enter manually</option>
+                        </optgroup>
+                    </select>
+                    <div id="customKwRow" class="hidden mt-4">
+                        <label class="block text-[10px] font-bold text-salt uppercase tracking-widest mb-2">Stabilizer Steady-State Draw (kW)</label>
+                        <input id="customKw" type="number" min="0.1" max="20" step="0.1" placeholder="e.g. 3.5" oninput="calculate()" class="w-full bg-admiralty border border-salt/20 rounded px-4 py-3 text-parchment text-sm focus:outline-none focus:border-salt/50">
+                    </div>
+                </div>
+
+                <!-- Step 2: House Load -->
+                <div class="mb-8">
+                    <label class="block text-[10px] font-bold text-salt uppercase tracking-widest mb-3">
+                        Step 2 — House Load at Anchor (kW): <span id="houseLoadVal" class="text-salt">1.5</span> kW
+                    </label>
+                    <input id="houseLoad" type="range" min="0" max="8" step="0.5" value="1.5" oninput="document.getElementById('houseLoadVal').textContent=this.value; calculate();" class="w-full">
+                    <div class="flex justify-between text-[10px] text-parchment/30 font-mono mt-1">
+                        <span>0 kW (minimal)</span><span>4 kW (typical)</span><span>8 kW (heavy)</span>
+                    </div>
+                </div>
+
+                <!-- Step 3: Runtime -->
+                <div class="mb-8">
+                    <label class="block text-[10px] font-bold text-salt uppercase tracking-widest mb-3">
+                        Step 3 — Target Anchor Runtime: <span id="runtimeVal" class="text-salt">6</span> hours
+                    </label>
+                    <input id="runtime" type="range" min="2" max="12" step="1" value="6" oninput="document.getElementById('runtimeVal').textContent=this.value; calculate();" class="w-full">
+                    <div class="flex justify-between text-[10px] text-parchment/30 font-mono mt-1">
+                        <span>2 hrs</span><span>6 hrs</span><span>12 hrs</span>
+                    </div>
+                </div>
+
+                <!-- Result -->
+                <div id="resultBox" class="hidden bg-salt/5 border border-salt/30 rounded-lg p-6 text-center">
+                    <p class="text-[10px] font-mono text-salt/60 uppercase tracking-widest mb-2">Recommended System Size</p>
+                    <div class="font-display text-5xl font-bold text-salt mb-1" id="resultKwh">— kWh</div>
+                    <p class="text-xs text-parchment/50 mb-4" id="resultBreakdown"></p>
+                    <div id="kitRecommendation" class="bg-admiralty/60 border border-brass/20 rounded p-4 text-left text-sm mb-4"></div>
+                    <p class="text-[10px] text-parchment/30 font-mono">Calculation assumes 80% usable DoD on sodium-ion cells + 20% safety buffer. Surge startup draw not included in steady-state sizing — SALT START™ packs handle surge natively.</p>
+                </div>
+
+                <div id="placeholder" class="text-center py-8 text-parchment/20 text-sm font-mono">
+                    ← Select your stabilizer to see sizing results
+                </div>
+            </div>
+
+            <!-- Reference Table -->
+            <div class="bg-bearing/20 border border-salt/10 rounded-xl p-8">
+                <h2 class="font-display text-2xl font-bold mb-6">Quick Reference: Typical System Sizes</h2>
+                <table class="w-full text-xs">
+                    <thead>
+                        <tr class="border-b border-salt/10 text-parchment/40 font-mono uppercase tracking-wider">
+                            <th class="text-left py-3">Stabilizer</th>
+                            <th class="text-center py-3">4 hr anchor</th>
+                            <th class="text-center py-3">6 hr anchor</th>
+                            <th class="text-center py-3">8 hr anchor</th>
+                            <th class="text-center py-3">Kit Match</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-parchment/70">
+                        <tr class="border-b border-salt/5"><td class="py-3">SK6 / DG3</td><td class="text-center">12 kWh</td><td class="text-center">18 kWh</td><td class="text-center">24 kWh</td><td class="text-center text-salt">SALT START™</td></tr>
+                        <tr class="border-b border-salt/5"><td class="py-3">SK9 / DG3</td><td class="text-center">14 kWh</td><td class="text-center">21 kWh</td><td class="text-center">28 kWh</td><td class="text-center text-salt">SALT SURGE™</td></tr>
+                        <tr class="border-b border-salt/5"><td class="py-3">SK16</td><td class="text-center">20 kWh</td><td class="text-center">30 kWh</td><td class="text-center">40 kWh</td><td class="text-center text-salt">SALT SURGE™</td></tr>
+                        <tr class="border-b border-salt/5"><td class="py-3">SK26 / DG6</td><td class="text-center">26 kWh</td><td class="text-center">39 kWh</td><td class="text-center">52 kWh</td><td class="text-center text-brass">SALT FLEET™</td></tr>
+                        <tr><td class="py-3">SK35 / SK40</td><td class="text-center">34 kWh</td><td class="text-center">51 kWh</td><td class="text-center">68 kWh</td><td class="text-center text-brass">SALT FLEET™</td></tr>
+                    </tbody>
+                </table>
+                <p class="mt-4 text-[10px] text-parchment/30 font-mono">Assumes 1.5 kW house load. Actual sizing varies by vessel — load analysis included with all installs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 px-6 text-center">
+        <div class="max-w-xl mx-auto">
+            <h2 class="font-display text-3xl font-bold mb-4">Want a Verified Sizing?</h2>
+            <p class="text-parchment/60 text-sm mb-6">The calculator gives you a ballpark. A real load analysis gives you certainty. We'll come to your vessel and measure actual consumption before we spec anything.</p>
+            <a href="mailto:jake@helmlegal.net?subject=Battery%20Sizing%20Request&body=Stabilizer%20Model:%0ATarget%20Runtime:%0AVessel%20LOA%20%26%20Type:"
+               class="bg-salt hover:bg-salt-dark text-white px-8 py-4 rounded font-semibold transition inline-flex items-center gap-2 shadow-lg shadow-salt/10">
+                <i data-lucide="send" class="w-4 h-4"></i> Request Vessel Load Analysis
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-admiralty border-t border-salt/10 py-10 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-parchment/30">
+            <div class="flex items-center gap-3">
+                <span class="font-display text-sm font-bold text-salt">SALTY MARINE</span>
+                <span class="text-parchment/20">|</span>
+                <span>A Starboard Tech Group Company</span>
+            </div>
+            <div class="flex gap-6">
+                <a href="/" class="hover:text-salt transition">Home</a>
+                <a href="/services" class="hover:text-salt transition">Services</a>
+                <a href="/technology" class="hover:text-salt transition">Technology</a>
+                <a href="/battery-sizing" class="text-salt">Battery Sizing</a>
+            </div>
+            <span>© 2026 Salty Marine LLC · Fort Lauderdale, FL</span>
+        </div>
+    </footer>
+
+    <script>
+    lucide.createIcons();
+
+    // Stabilizer power data (kW steady state)
+    const gyroKw = {
+        sk2:0.8, sk6:1.5, sk9:2.0, sk16:3.2, sk26:4.5, sk35:5.5, sk40:6.5,
+        dg3:1.2, dg6:2.8, quick:1.8, smartgyro:2.2
+    };
+
+    function calculate() {
+        const sel = document.getElementById('gyroModel');
+        const val = sel.value;
+        if (!val) return;
+
+        const customRow = document.getElementById('customKwRow');
+        let gyroKwVal;
+        if (val === 'custom') {
+            customRow.classList.remove('hidden');
+            gyroKwVal = parseFloat(document.getElementById('customKw').value) || 0;
+            if (!gyroKwVal) return;
+        } else {
+            customRow.classList.add('hidden');
+            gyroKwVal = gyroKw[val] || 0;
+        }
+
+        const houseKw = parseFloat(document.getElementById('houseLoad').value);
+        const hours = parseFloat(document.getElementById('runtime').value);
+        const totalKw = gyroKwVal + houseKw;
+        const rawKwh = totalKw * hours;
+        // Account for 80% DoD + 20% safety buffer = divide by 0.65
+        const sizedKwh = Math.ceil(rawKwh / 0.65);
+
+        let kit, kitColor, kitDesc;
+        if (sizedKwh <= 15) {
+            kit = 'SALT START™ Starter Kit ($3,499)';
+            kitColor = 'text-salt';
+            kitDesc = '10 kWh pack. Best for SK6/SK9/DG3 class at 4–5 hr anchor.';
+        } else if (sizedKwh <= 32) {
+            kit = 'SALT SURGE™ Standard Kit ($5,999)';
+            kitColor = 'text-salt';
+            kitDesc = '20 kWh pack. Best for SK9/SK16/DG6 class at 6–8 hr anchor.';
+        } else {
+            kit = 'SALT FLEET™ Commercial Kit (Custom Pricing)';
+            kitColor = 'text-brass';
+            kitDesc = '30–60 kWh configurable. For SK26/SK35/SK40 or extended runtime requirements.';
+        }
+
+        document.getElementById('resultKwh').textContent = sizedKwh + ' kWh';
+        document.getElementById('resultBreakdown').textContent =
+            `Gyro: ${gyroKwVal} kW + House: ${houseKw} kW = ${totalKw.toFixed(1)} kW total × ${hours} hrs ÷ 0.65 efficiency`;
+        document.getElementById('kitRecommendation').innerHTML =
+            `<p class="text-[10px] font-mono text-parchment/40 uppercase tracking-widest mb-1">Recommended Kit</p>
+             <p class="font-bold ${kitColor} mb-1">${kit}</p>
+             <p class="text-parchment/50 text-xs">${kitDesc}</p>`;
+        document.getElementById('resultBox').classList.remove('hidden');
+        document.getElementById('placeholder').classList.add('hidden');
+    }
+    </script>
+</body>
+</html>

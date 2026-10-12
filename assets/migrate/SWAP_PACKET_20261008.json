@@ -1,0 +1,431 @@
+{
+  "generated": "2026-10-08",
+  "wave": "SWAP_PACKET",
+  "source_dockets": "ECF 77/78 (1:26-cv-01332-MJM)",
+  "migrate_dir": "PREDICATE_BUILD\\apps\\salty-marine-www\\assets\\migrate",
+  "counts": {
+    "figures": 15,
+    "assets_ready": 6,
+    "blocked_owner_session": 4,
+    "third_party": 1,
+    "unmapped": 4
+  },
+  "note": "Blurred assets are LOCAL replacements. Platform apply is manual \u2014 CEO owner sessions only. Never delete accounts.",
+  "figures": [
+    {
+      "figure": "A",
+      "platform": "Facebook",
+      "account": "Starboard Yacht Group LLC",
+      "media_type": "caption_and_or_photo",
+      "state": "NO_ASSET_OWNER_SESSION",
+      "assets": [],
+      "ceo_step": "FB owner session: edit Nov 19 2024 post \u2014 scrub caption, replace or delete photo. No local source on file; page admin restored per DE91 \u00b611."
+    },
+    {
+      "figure": "B",
+      "platform": "Facebook",
+      "account": "Starboard Yacht Group LLC",
+      "media_type": "cover_photo",
+      "state": "NO_ASSET_OWNER_SESSION",
+      "assets": [],
+      "ceo_step": "FB owner session: replace Jul 15 2026 cover photo (Seakeeper logo on podium/rug) or remove. No local source on file."
+    },
+    {
+      "figure": "C",
+      "platform": "Linktree",
+      "account": "SYG Instagram \u2192 Linktree",
+      "media_type": "linktree_images_and_text",
+      "state": "PARTIALLY_APPLIED_20261008",
+      "assets": [
+        {
+          "file": "W4460_figC_thumb_no_seakeeper.png",
+          "present": true,
+          "copies": [
+            {
+              "path": "PREDICATE_BUILD\\apps\\salty-marine-www\\assets\\migrate\\W4460_figC_thumb_no_seakeeper.png",
+              "sha16": "d497ded2c760db8e",
+              "bytes": 25687
+            }
+          ]
+        },
+        {
+          "file": "W4460_figC_seakeeper_only_redacted.png",
+          "present": true,
+          "copies": [
+            {
+              "path": "PREDICATE_BUILD\\apps\\salty-marine-www\\assets\\migrate\\W4460_figC_seakeeper_only_redacted.png",
+              "sha16": "431f3163b599a803",
+              "bytes": 784042
+            }
+          ]
+        },
+        {
+          "file": "figC_thumb_REPLACEMENT_no_seakeeper.png",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260831_W4452\\blurred\\figC_thumb_REPLACEMENT_no_seakeeper.png",
+              "sha16": "d497ded2c760db8e",
+              "bytes": 25687
+            }
+          ]
+        },
+        {
+          "file": "figC_explore_live_SEAKEeper_MARKS_REDACTED.png",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260831_W4452\\blurred\\figC_explore_live_SEAKEeper_MARKS_REDACTED.png",
+              "sha16": "d2c079df5e24f3b6",
+              "bytes": 671723
+            }
+          ]
+        },
+        {
+          "file": "figC_explore_SEAKEEPER_GRID_REDACTED.png",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260831_W4452\\blurred\\figC_explore_SEAKEEPER_GRID_REDACTED.png",
+              "sha16": "634dec389520b6ba",
+              "bytes": 651615
+            }
+          ]
+        }
+      ],
+      "ceo_step": "COMPLETE 10/8: API deactivated flagged thumbs (W6132) + dashboard avatar swapped to blurred via Playwright (W6138). Live page measured: 0 flagged hashes, 0 seakeeper/humphree text. Reversible via dashboard re-upload.",
+      "status": "APPLIED_VERIFIED",
+      "remeasure": "GET linktr.ee/starboardyacht 200 - fc00901b/05603f4e/1d3ceeaa all absent; avatar now serves 4ae1cf28...figC-linktree-5...blurred.png; seakeeper/humphree text count=0"
+    },
+    {
+      "figure": "D",
+      "platform": "Instagram",
+      "account": "@starboardyacht",
+      "media_type": "image",
+      "state": "ASSETS_READY",
+      "assets": [
+        {
+          "file": "W4460_figD_blurred.mp4",
+          "present": true,
+          "copies": [
+            {
+              "path": "PREDICATE_BUILD\\apps\\salty-marine-www\\assets\\migrate\\W4460_figD_blurred.mp4",
+              "sha16": "af0472b849ba2473",
+              "bytes": 215701
+            }
+          ]
+        },
+        {
+          "file": "figD_ig_1_blurred.mp4",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figD_ig_1_blurred.mp4",
+              "sha16": "142edf0e8d4251f9",
+              "bytes": 2823
+            }
+          ]
+        },
+        {
+          "file": "figD_ig_2_blurred.mp4",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figD_ig_2_blurred.mp4",
+              "sha16": "af0472b849ba2473",
+              "bytes": 215701
+            }
+          ]
+        }
+      ],
+      "ceo_step": "@starboardyacht IG owner session: replace Nov 10 2024 post media with blurred video; scrub caption."
+    },
+    {
+      "figure": "E",
+      "platform": "Instagram",
+      "account": "boatsgonewild (third party) tagging @starboardyacht",
+      "media_type": "third_party_image",
+      "state": "THIRD_PARTY",
+      "assets": [],
+      "ceo_step": "Third-party (boatsgonewild) \u2014 not SYG-controlled. Document non-control; optional takedown request; hide tagged post from profile."
+    },
+    {
+      "figure": "F",
+      "platform": "Instagram",
+      "account": "@starboardyacht",
+      "media_type": "image",
+      "state": "ASSETS_READY",
+      "assets": [
+        {
+          "file": "W4460_figF_blurred.mp4",
+          "present": true,
+          "copies": [
+            {
+              "path": "PREDICATE_BUILD\\apps\\salty-marine-www\\assets\\migrate\\W4460_figF_blurred.mp4",
+              "sha16": "f2ebc6937f183d12",
+              "bytes": 447508
+            }
+          ]
+        },
+        {
+          "file": "figF_ig_1_blurred.mp4",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figF_ig_1_blurred.mp4",
+              "sha16": "421670712a7a7875",
+              "bytes": 7041
+            }
+          ]
+        },
+        {
+          "file": "figF_ig_1_thumb_blurred.jpg",
+          "present": true,
+          "copies": [
+            {
+              "path": "PREDICATE_BUILD\\apps\\salty-marine-www\\assets\\migrate\\figF_ig_1_thumb_blurred.jpg",
+              "sha16": "29b5f462137b99fd",
+              "bytes": 22872
+            },
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figF_ig_1_thumb_blurred.jpg",
+              "sha16": "29b5f462137b99fd",
+              "bytes": 22872
+            }
+          ]
+        },
+        {
+          "file": "figF_ig_2_blurred.mp4",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figF_ig_2_blurred.mp4",
+              "sha16": "f2ebc6937f183d12",
+              "bytes": 447508
+            }
+          ]
+        }
+      ],
+      "ceo_step": "@starboardyacht IG owner session: replace Oct 31 2024 post media (dealer sign + award logos now blurred); scrub caption."
+    },
+    {
+      "figure": "G",
+      "platform": "Instagram",
+      "account": "@starboardyacht",
+      "media_type": "image",
+      "state": "ASSETS_READY",
+      "assets": [
+        {
+          "file": "W4460_figG_blurred.jpg",
+          "present": true,
+          "copies": [
+            {
+              "path": "PREDICATE_BUILD\\apps\\salty-marine-www\\assets\\migrate\\W4460_figG_blurred.jpg",
+              "sha16": "55dfdc04387c7463",
+              "bytes": 76397
+            }
+          ]
+        },
+        {
+          "file": "figG_ig_1_blurred.jpg",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figG_ig_1_blurred.jpg",
+              "sha16": "55dfdc04387c7463",
+              "bytes": 76397
+            },
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_174305\\blurred\\figG_ig_1_blurred.jpg",
+              "sha16": "55dfdc04387c7463",
+              "bytes": 76397
+            }
+          ]
+        }
+      ],
+      "ceo_step": "@starboardyacht IG owner session: replace Oct 28 2024 'Slow Your Roll' photo with blurred jpg."
+    },
+    {
+      "figure": "H",
+      "platform": "Instagram",
+      "account": "@starboardyacht",
+      "media_type": "caption",
+      "state": "ASSETS_READY",
+      "assets": [
+        {
+          "file": "figH_ig_1_blurred.mp4",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figH_ig_1_blurred.mp4",
+              "sha16": "d0b9f48d2a1022a0",
+              "bytes": 14536
+            }
+          ]
+        },
+        {
+          "file": "figH_ig_2_blurred.mp4",
+          "present": true,
+          "copies": [
+            {
+              "path": "PREDICATE_BUILD\\apps\\salty-marine-www\\assets\\migrate\\figH_ig_2_blurred.mp4",
+              "sha16": "fc1684b1e1de0dc7",
+              "bytes": 348122
+            },
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figH_ig_2_blurred.mp4",
+              "sha16": "fc1684b1e1de0dc7",
+              "bytes": 348122
+            }
+          ]
+        }
+      ],
+      "ceo_step": "@starboardyacht IG owner session: swap Jul 31 2024 media to blurred mp4 AND scrub caption text (@seakeeper mention). Verbatim current caption needed for surgical scrub \u2014 pull at session."
+    },
+    {
+      "figure": "I",
+      "platform": "LinkedIn",
+      "account": "Starboard Yacht Group (company)",
+      "media_type": "logo_and_specialties",
+      "state": "TEXT_EDIT_ONLY",
+      "assets": [],
+      "ceo_step": "LinkedIn company page: banner already blurred/applied 2026-09-03. Remaining: remove 'seakeeper' from Specialties field text."
+    },
+    {
+      "figure": "J",
+      "platform": "LinkedIn",
+      "account": "Charles Jacob Stratmann (personal)",
+      "media_type": "about_text",
+      "state": "TEXT_EDIT_ONLY",
+      "assets": [],
+      "ceo_step": "LinkedIn personal About: remove 'partner with brands such as Seakeeper'. Text edit, owner session."
+    },
+    {
+      "figure": "K",
+      "platform": "LinkedIn",
+      "account": "Charles Jacob Stratmann (personal)",
+      "media_type": "experience_text",
+      "state": "TEXT_EDIT_ONLY",
+      "assets": [],
+      "ceo_step": "LinkedIn personal Experience: remove 'Seakeeper Custom Refits' line. Text edit, owner session."
+    },
+    {
+      "figure": "L",
+      "platform": "LinkedIn",
+      "account": "Charles Jacob Stratmann (personal)",
+      "media_type": "post",
+      "state": "TEXT_EDIT_ONLY",
+      "assets": [],
+      "ceo_step": "LinkedIn personal post re: Extended Warranty program: delete or edit. Owner session."
+    },
+    {
+      "figure": "Y1",
+      "platform": "Yelp",
+      "account": "starboard-yacht-group-dania-beach-2",
+      "media_type": "business_description",
+      "state": "BLOCKED_NO_ACCESS",
+      "assets": [],
+      "ceo_step": "Yelp biz page (access requests 07/14 + 09/02 unanswered): edit 'From the Business' to remove Seakeeper Gyro/Repair/Stabilizers."
+    },
+    {
+      "figure": "Y2-Y4",
+      "platform": "Yelp",
+      "account": "starboard-yacht-group-dania-beach-2",
+      "media_type": "photos",
+      "state": "BLOCKED_NO_ACCESS",
+      "assets": [],
+      "ceo_step": "Yelp biz photos (3): delete or replace blurred \u2014 blocked on owner access. No local sources on file."
+    },
+    {
+      "figure": "HX",
+      "platform": "Instagram",
+      "account": "@captainsalty / SYG (supplemental figure)",
+      "media_type": "image_and_video",
+      "state": "ASSETS_READY",
+      "assets": [
+        {
+          "file": "figHX_ig_1_blurred.jpg",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figHX_ig_1_blurred.jpg",
+              "sha16": "5fa80f9b0b0720b9",
+              "bytes": 69797
+            },
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_174305\\blurred\\figHX_ig_1_blurred.jpg",
+              "sha16": "5018b1badc10c5c7",
+              "bytes": 45847
+            }
+          ]
+        },
+        {
+          "file": "figHX_ig_1_blurred.mp4",
+          "present": true,
+          "copies": [
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figHX_ig_1_blurred.mp4",
+              "sha16": "2105e5883603bf72",
+              "bytes": 17443
+            }
+          ]
+        },
+        {
+          "file": "figHX_ig_1_thumb_blurred.jpg",
+          "present": true,
+          "copies": [
+            {
+              "path": "PREDICATE_BUILD\\apps\\salty-marine-www\\assets\\migrate\\figHX_ig_1_thumb_blurred.jpg",
+              "sha16": "ea180fdd056c412f",
+              "bytes": 49362
+            },
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figHX_ig_1_thumb_blurred.jpg",
+              "sha16": "ea180fdd056c412f",
+              "bytes": 49362
+            }
+          ]
+        },
+        {
+          "file": "figHX_ig_2_blurred.mp4",
+          "present": true,
+          "copies": [
+            {
+              "path": "PREDICATE_BUILD\\apps\\salty-marine-www\\assets\\migrate\\figHX_ig_2_blurred.mp4",
+              "sha16": "0967d6ec53e136df",
+              "bytes": 2502191
+            },
+            {
+              "path": "temp\\skr_mark_remediation\\20260824_155147\\blurred\\figHX_ig_2_blurred.mp4",
+              "sha16": "0967d6ec53e136df",
+              "bytes": 2502191
+            }
+          ]
+        }
+      ],
+      "ceo_step": "CaptSalty/SYG IG owner session: replace media (shirt wordmark blurred on thumb, full-frame blur on video)."
+    }
+  ],
+  "application_log": [
+    {
+      "ts": "2026-10-08",
+      "actor": "devin-syg04",
+      "scope": "CEO-approved swap (linktree MCP, OWNER access)",
+      "actions": [
+        {
+          "fig": "C",
+          "op": "link.deactivate",
+          "id": 392285244,
+          "reason": "thumb 05603f4e Seakeeper-Humphree"
+        },
+        {
+          "fig": "C",
+          "op": "link.deactivate",
+          "id": 392085134,
+          "reason": "thumb 1d3ceeaa flagged tile"
+        }
+      ],
+      "remeasure": "GET linktr.ee/starboardyacht 200 \u2014 05603f4e and 1d3ceeaa absent; fc00901b avatar 6 refs remain"
+    }
+  ]
+}
