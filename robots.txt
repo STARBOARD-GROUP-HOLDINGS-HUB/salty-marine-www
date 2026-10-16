@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /seakeeper
 
 Sitemap: https://saltymarine.com/sitemap.xml
