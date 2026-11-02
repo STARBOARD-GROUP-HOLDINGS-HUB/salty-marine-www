@@ -668,7 +668,7 @@
                 ts: new Date().toISOString()
             };
             try {
-                const r = await fetch('/api/leads/capture', {
+                const r = await fetch('https://salty-marine-www.renee-08e.workers.dev/api/leads/capture', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify(payload)
